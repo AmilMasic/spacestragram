@@ -34,13 +34,16 @@ class Pictures extends React.Component {
 
         <p>"Curiosity Rover Pictures Taken On My 30th Birthday"</p>
         {this.state.data.photos && this.state.data.photos.map(picture =>
-          <div key={picture.id}>
+          <article key={picture.id}>
             <img
               src={picture.img_src}
               alt="N/A"
-            />
 
-          </ div>)}
+            />
+          
+            <header> {picture.rover.name} - {picture.camera.full_name} </header>
+            <h4> {picture.earth_date} </h4>
+          </ article>)}
 
       </div>
     )
