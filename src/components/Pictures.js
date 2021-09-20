@@ -28,9 +28,20 @@ class Pictures extends React.Component {
   }
 
   render(){
+
     return (
       <div>
-        <p>"This is the Pictures component"</p>
+
+        <p>"Curiosity Rover Pictures Taken On My 30th Birthday"</p>
+        {this.state.data.photos && this.state.data.photos.map(picture =>
+          <div key={picture.id}>
+            <img
+              src={picture.img_src}
+              alt="N/A"
+            />
+
+          </ div>)}
+
       </div>
     )
   }
