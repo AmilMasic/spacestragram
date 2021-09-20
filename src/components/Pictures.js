@@ -40,7 +40,7 @@ class Pictures extends React.Component {
               alt="N/A"
 
             />
-          
+            
             <header> {picture.rover.name} - {picture.camera.full_name} </header>
             <h4> {picture.earth_date} </h4>
           </ article>)}
