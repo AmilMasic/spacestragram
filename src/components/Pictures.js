@@ -1,4 +1,5 @@
 import React from 'react';
+import LikeButton from './LikeButton';
 
 const apiKey = process.env.REACT_APP_NASA_API_KEY;
 
@@ -40,9 +41,10 @@ class Pictures extends React.Component {
               alt="N/A"
 
             />
-            
+
             <header> {picture.rover.name} - {picture.camera.full_name} </header>
             <h4> {picture.earth_date} </h4>
+            <LikeButton/>
           </ article>)}
 
       </div>
