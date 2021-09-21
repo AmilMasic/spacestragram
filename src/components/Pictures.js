@@ -37,19 +37,19 @@ class Pictures extends React.Component {
     return (
       <div>
 
-        <p>"Curiosity Rover Pictures Taken On July 28th 2021"</p>
+        <h4>Curiosity Rover Pictures Taken On July 28th 2021</h4>
         {this.state.data.photos && this.state.data.photos.map(picture =>
-          <article key={picture.id}>
+          <figure key={picture.id}>
             <img
               src={picture.img_src}
               alt="N/A"
 
             />
 
-            <header> {picture.rover.name} - {picture.camera.full_name} </header>
-            <h4> {picture.earth_date} </h4>
+            <figcaption> {picture.rover.name} - {picture.camera.full_name} </figcaption>
+            <p> {picture.earth_date} </p>
             <LikeButton/>
-          </ article>)}
+          </ figure>)}
 
       </div>
     )
