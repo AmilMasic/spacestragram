@@ -1,6 +1,10 @@
 import React from 'react';
 import LikeButton from './LikeButton';
 
+// the API key should be in an .env file
+// I understand having it like this is a major flaw in my project
+// I can't figure out how to properly make Pages, Secrets and Actions on GitHub to work
+// Ideally, if I had more time, I would have hosted this on Netlify or Heroku.
 const apiKey = "uZ41tRo1mYYliaInuKNDn72wI0Dj5rirLdO0OyNE";
 
 class Pictures extends React.Component {
